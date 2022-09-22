@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/flickr3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome User!"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+        </TextView>
+
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/iconlogo">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#F64A8A"
+            android:drawableLeft="@drawable/ic_baseline_email_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F64A8A"
+            android:drawableLeft="@drawable/ic_baseline_email_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="9dp" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F64A8A"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="textPersonName"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F64A8A"
+            android:drawableLeft="@drawable/ic_baseline_security_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/confirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F64A8A"
+            android:drawableLeft="@drawable/ic_baseline_security_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="9dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#F4BB44"
+            android:padding="15dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/design_default_color_secondary_variant"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/frost2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Messenger !"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/iconlogo">
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#1d1dffff"
+            android:drawableLeft="@drawable/ic_baseline_email_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#1d1dffff"
+            android:drawableLeft="@drawable/ic_baseline_security_24s"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="9dp" />
+
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3a7bd5"
+            android:padding="15dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/design_default_color_secondary_variant"
+            app:cornerRadius="8dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btngoogle"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@android:dimen/app_icon_size"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_g" />
+
+            <Button
+                android:id="@+id/btnfacebook"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@android:dimen/app_icon_size"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnemail"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="@android:dimen/app_icon_size"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_email_24">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
